@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for student in defaulter %}
+{{student.id}}
+{{student.name}}
+{{student.age}}
+{{student.graduated}}
+{{student.grades}}
+<br>
+{% endfor %}
+
+<hr>
+{% for student in defaulter %}
+{{student.id}}
+{{student.name}}
+{{student.age}}
+{{student.graduated}}
+{{student.grades}}
+<br>
+{% endfor %}
+
+</body>
+</html>

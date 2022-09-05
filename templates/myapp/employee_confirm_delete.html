@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>
+    Are you Sure You Want to delete
+</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    <input type="submit" value="Delete">
+    <a href="{% url 'employeeCreateView' %}">Cancel</a>
+</form>
+
+
+</body>
+</html>
